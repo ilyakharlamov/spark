@@ -188,7 +188,7 @@ object Cast extends QueryErrorsBase {
   val USER_SPECIFIED_CAST = new TreeNodeTag[Unit]("user_specified_cast")
 
   /**
-   * Returns true iff we can cast `from` type to `to` type.
+   * Returns true if we can cast `from` type to `to` type.
    */
   def canCast(from: DataType, to: DataType): Boolean = (from, to) match {
     case (fromType, toType) if fromType == toType => true
